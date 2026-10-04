@@ -6,6 +6,13 @@ Repository: https://github.com/k3w1io/FlexPay (private).
 
 Expo project: https://expo.dev/accounts/aliflexpayteam/projects/aliflexpay, owned by the `aliflexpayteam` organization. The owner's Expo login is `ali.gnv`.
 
+First verified Android starter build:
+
+- [Build details and installation](https://expo.dev/accounts/aliflexpayteam/projects/aliflexpay/builds/7c205e5b-1a50-4e5b-b336-7e47f1773c36)
+- [Download the APK](https://expo.dev/artifacts/eas/nWfwS36X4sU9bF--K1cgumMPMazNxCN5Wib6kD9ljvc.apk)
+
+This build verifies the starter and cloud build pipeline. It shows the FlexPay starter screen; the product demo flow remains to be implemented. A local copy is saved at `artifacts/FlexPay-starter.apk` in the owner's workspace. Device installation and runtime testing remain to be done on an Android phone.
+
 The app in `mobile/` is an Android-only Expo TypeScript starter with cloud-build profiles and a browser demo fallback. The market, traffic model, verification and rewards are still to be implemented. This starter does not make real payments or use vehicle records.
 
 ## Start developing
