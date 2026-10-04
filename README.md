@@ -24,10 +24,11 @@ Edit `mobile/App.tsx`. The browser reloads as you work. For a native development
 ```sh
 npm run typecheck
 npm run lint
+npm run export:android
 npm run export:web
 ```
 
-GitHub Actions runs these checks on pushes to `main` and pull requests, and saves the exported web demo as a downloadable artifact. An artifact is an export, not a hosted URL.
+GitHub Actions runs TypeScript, lint, Android bundle and browser export checks on pushes to `main` and pull requests, and saves the exported web demo as a downloadable artifact. An artifact is an export, not a hosted URL.
 
 ## Expo cloud builds
 

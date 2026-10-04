@@ -6,6 +6,7 @@ artifacts/
 node_modules/
 .expo/
 dist/
+dist-android/
 web-build/
 mobile/android/
 mobile/ios/

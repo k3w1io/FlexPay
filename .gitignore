@@ -3,6 +3,7 @@ tmp/
 node_modules/
 .expo/
 dist/
+dist-android/
 web-build/
 artifacts/
 *.log
