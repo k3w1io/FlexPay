@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "FlexPay",
+    "slug": "aliflexpay",
+    "owner": "ali.gnv",
+    "scheme": "flexpay",
+    "platforms": [
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.k3w1io.flexpay",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "name": "FlexPay",
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "809897a6-719e-4d47-90b9-f15435eb27f4"
+      }
+    }
+  }
+}
