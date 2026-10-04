@@ -1,0 +1,48 @@
+/* Ported from the FlexPay Paper file tokens. Keep in sync with Paper. */
+:root {
+  --color-bg: #ffffff;
+  --color-panel: #f3f4f5;
+  --color-ink: #15181c;
+  --color-muted: #5e6670;
+  --color-hairline: #e2e5e8;
+  --color-history: #c9ced4;
+  --color-scenario: #2a55c0;
+  --color-scenario-soft: #e8eefb;
+  --color-assumed: #d4861a;
+  --color-assumed-soft: #fbf1e2;
+  --color-assumed-text: #8a560f;
+
+  --font-sans: 'Instrument Sans', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --text-label: 11px;
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 16px;
+  --text-lg: 24px;
+  --text-xl: 28px;
+  --text-hero: 64px;
+
+  --tracking-tight: -0.02em;
+  --tracking-label: 0.06em;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  --shadow-raised: 0 1px 2px rgba(21, 24, 28, 0.08);
+  --container-rail: 400px;
+  --duration-fast: 150ms;
+}

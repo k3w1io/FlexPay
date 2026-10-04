@@ -12,6 +12,12 @@ Help a regular peak commuter understand their routine, discover a feasible chang
 
 Our working user has occasional flexibility. The same person may be able to change Tuesday’s journey and unable to change Wednesday’s.
 
+The chosen first-use direction is a **council-led invitation to a local FlexZone pilot**. A letter offers voluntary activation of an invitation already linked to an example vehicle. The person joins by choice, confirms their vehicle relationship, and then explores their FlexZone, routine, and available offers. Production council sponsorship and records access remain unconfirmed.
+
+A **FlexZone** is a clearly bounded road section. Each offer specifies its direction, date, and time window. “Make room” is the shared purpose; the zone and window make the exchange precise.
+
+The current prototype requires acceptance for each dated offer, with the reward reserved when acceptance succeeds. A council proposal may repeat opportunities on selected weekdays; commuters still choose separately each day. The planning screen distinguishes invitations, acceptance places, reward payments and assumed additional change.
+
 ## Hackathon scope
 
 - One corridor, direction, and constrained window. The N7 is a candidate; the exact location and window remain open.
@@ -34,7 +40,11 @@ Experience design can progress using labelled examples while data work establish
 ## Documents
 
 - [First experience](first-experience.md): user, job to be done, candidate journey, and open design decisions.
+- [Commuter experience PRD](commuter-experience-prd.md): Aoife's first offer, JTBD, ASCII screens, funded acceptance, verification, rewards, and recurring opportunities.
 - [Data brief](data-brief.md): information the experience needs from the technical workstream.
+- [Vehicle verification](vehicle-verification.md): enrolment trust, owner or driver authorisation, and prototype boundaries.
+- [Council invitations](council-invitations.md): chosen first-use direction, letter copy, activation, and the FlexZone introduction.
+- [Council simulator PRD](council-simulator-prd.md): planning-screen controls, scenario calculations, evidence boundaries, and acceptance criteria.
 
 ## Important distinctions
 

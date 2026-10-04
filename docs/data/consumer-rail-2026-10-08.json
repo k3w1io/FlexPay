@@ -1,0 +1,201 @@
+{
+  "description": "Public scheduled rail evidence for the FlexPay consumer demo; not connected to the app.",
+  "evidence_type": "scheduled",
+  "service_date": "2026-10-08",
+  "display_timezone": "Europe/Dublin",
+  "source_timezone": "Europe/London",
+  "source": {
+    "publisher": "National Transport Authority",
+    "url": "https://www.transportforireland.ie/transitData/Data/GTFS_Irish_Rail.zip",
+    "catalog_url": "https://www.transportforireland.ie/transitData/PT_Data.html",
+    "retrieved_at": "2026-10-04T14:25:30.043861+00:00",
+    "licence": "CC BY 4.0",
+    "feed_version": "892A3408-F422-4978-8896-7420CF625122",
+    "feed_start_date": "20261003",
+    "feed_end_date": "20271003",
+    "download_sha256": "2b858855a2e26c626a2155b18ca5be9066805f469b927beb9717ca634dee5526"
+  },
+  "scope": {
+    "origin_stop_id": "8260IR0060",
+    "destination_stop_id": "8220IR0132",
+    "departure_from": "06:00:00",
+    "departure_before": "10:30:00",
+    "selection": "Direct services calling at both stops in increasing stop sequence, after applying service calendar and date exceptions."
+  },
+  "limitations": [
+    "Station-to-station schedules; no live performance or arrival guarantee.",
+    "Home-to-station and station-to-final-destination travel are not supplied.",
+    "No fares in the retrieved operator feed.",
+    "Does not establish spare capacity, personal feasibility or vehicle absence."
+  ],
+  "stations": [
+    {
+      "id": "8260IR0060",
+      "name": "Sallins and Naas",
+      "latitude": 53.247026,
+      "longitude": -6.664586
+    },
+    {
+      "id": "8220IR0132",
+      "name": "Dublin Heuston",
+      "latitude": 53.346404,
+      "longitude": -6.293487
+    }
+  ],
+  "options": [
+    {
+      "departure": "06:07:00",
+      "arrival": "06:42:00",
+      "trip_id": "5936_11487",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-PORTLAOIS-O",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 6,
+      "arrival_stop_sequence": 12
+    },
+    {
+      "departure": "06:27:00",
+      "arrival": "06:53:00",
+      "trip_id": "5936_13516",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-WESTPORT-I",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 8,
+      "arrival_stop_sequence": 10
+    },
+    {
+      "departure": "06:44:00",
+      "arrival": "07:20:00",
+      "trip_id": "5936_12877",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-WATERFORD-I",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 3,
+      "arrival_stop_sequence": 9
+    },
+    {
+      "departure": "06:58:00",
+      "arrival": "07:26:00",
+      "trip_id": "5936_11501",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-PORTLAOIS-O",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 6,
+      "arrival_stop_sequence": 9
+    },
+    {
+      "departure": "07:17:00",
+      "arrival": "07:44:00",
+      "trip_id": "5936_12875",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-WATERFORD-I",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 5,
+      "arrival_stop_sequence": 8
+    },
+    {
+      "departure": "07:21:00",
+      "arrival": "07:47:00",
+      "trip_id": "5936_11510",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-PORTLAOIS-O",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 5,
+      "arrival_stop_sequence": 7
+    },
+    {
+      "departure": "07:37:00",
+      "arrival": "07:59:00",
+      "trip_id": "5936_8225",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-GALWAY-O",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 12,
+      "arrival_stop_sequence": 13
+    },
+    {
+      "departure": "07:43:00",
+      "arrival": "08:16:00",
+      "trip_id": "5936_12895",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-WATERFORD-I",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 2,
+      "arrival_stop_sequence": 8
+    },
+    {
+      "departure": "07:55:00",
+      "arrival": "08:28:00",
+      "trip_id": "5936_11520",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-PORTLAOIS-O",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 6,
+      "arrival_stop_sequence": 12
+    },
+    {
+      "departure": "08:21:00",
+      "arrival": "08:52:00",
+      "trip_id": "5936_12905",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-WATERFORD-I",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 2,
+      "arrival_stop_sequence": 8
+    },
+    {
+      "departure": "08:34:00",
+      "arrival": "08:55:00",
+      "trip_id": "5936_9135",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-LIMERICK-I",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 8,
+      "arrival_stop_sequence": 9
+    },
+    {
+      "departure": "08:52:00",
+      "arrival": "09:26:00",
+      "trip_id": "5936_11537",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-PORTLAOIS-O",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 6,
+      "arrival_stop_sequence": 12
+    },
+    {
+      "departure": "09:37:00",
+      "arrival": "09:58:00",
+      "trip_id": "5936_8252",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-GALWAY-O",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 8,
+      "arrival_stop_sequence": 9
+    },
+    {
+      "departure": "09:59:00",
+      "arrival": "10:37:00",
+      "trip_id": "5936_11558",
+      "headsign": "Dublin Heuston",
+      "route_id": "DUB-PORTLAOIS-O",
+      "pickup_type": "0",
+      "drop_off_type": "0",
+      "departure_stop_sequence": 6,
+      "arrival_stop_sequence": 12
+    }
+  ]
+}
