@@ -1,0 +1,66 @@
+# Coverage quality and missing data
+
+**Data status: observed access findings and explicit missing inputs.** Packaged 4 October 2026 from existing research; no fresh online collection.
+
+| Input | Status | Demo treatment |
+| --- | --- | --- |
+| Five weekday morning counts | Available: 28 Sep to 2 Oct 2026, 06:00-10:00 | Use observed historical charts |
+| Full-day five-minute records | Not packaged | Do not interpolate as real observations |
+| Multiweek baseline | Not collected | Show coverage gap |
+| Clock and DST convention | Unconfirmed | Use source-clock labels; no UTC conversion |
+| Detector QC flags | Unverified | Unknown is not healthy or zero |
+| Lane and movement geometry | Unconfirmed | No precise slip-road targeting claim |
+| Measured N7 speeds / journey times | Not collected | Use file 12 synthetic outcomes only |
+| Weather / incidents / roadworks | Not collected | Missing context, not no incident |
+| ANPR participant matching | No access or API confirmed | Synthetic file 10 only |
+| Camera continuous video | Not established | Updating still context only |
+| Production rewards / Leap integration | Not established | Simulated wallet only |
+
+Direct HTTP reports encountered reCAPTCHA and the browser Excel export did not complete. Do not bypass challenges or imply a working live ingest. A lower counter count can reflect reduced demand or reduced discharge under worse congestion; combine with performance measures.
+
+```json
+{
+  "schema_version": 1,
+  "observed_date": "2026-10-04",
+  "site_id": "000000001070",
+  "site_name": "TMU N07 001.0 E",
+  "method": "Normal public browser UI and current official technical publication; no challenge handling, credentials or hidden application data extraction.",
+  "checks": [
+    {
+      "source_url": "https://trafficdata.tii.ie/sitedashboard.asp?sgid=XzOA8m4lr27P0HaO3_srSB&spid=abeb430eae98",
+      "visible_result": "Volume statistics, vehicle-class breakdown, site data link, coordinates 53.31607, -6.37874 and a displayed 80 km/h speed-limit sign. No observed measured-speed series.",
+      "qualification": "The speed-limit sign is not measured vehicle speed. Summary volumes lack a verified comparable period for this check."
+    },
+    {
+      "source_url": "https://trafficdata.tii.ie/calendar_alt.asp?sgid=XZOA8M4LR27P0HAO3_SRSB&spid=ABEB430EAE98",
+      "visible_result": "Volume and Class report categories; no Speed category observed. Date inputs are read-only; attempted fill failed. Calendar claims availability into February 2027, later than the client date, so future dates were not used.",
+      "qualification": "This is the checked public calendar, not proof that no speed dataset exists elsewhere."
+    },
+    {
+      "source_url": "https://trafficdata.tii.ie/chartreport.asp?sgid=XzOA8m4lr27P0HaO3_srSB&spid=ABEB430EAE98&reportdate=2026-10-01&enddate=2026-10-01",
+      "visible_result": "Displayed date Thursday 1 October 2026; hourly chart mode. Display choices were Volume, HGVs, Class Invalid and seven vehicle classes. No Speed choice observed. Direction/lane choices included East, West and four lanes each direction.",
+      "qualification": "Page URL normalised to week 28 September through 4 October while its date field remained 1 October. No chart values were collected. Disabled accessibility labels do not establish permanent data unavailability."
+    },
+    {
+      "source_url": "https://trafficdata.tii.ie/publicmultinodemap.asp",
+      "visible_result": "N7 site summary fields ADT, % HGV and Coverage; no measured speed field in the inspected site summary.",
+      "qualification": "Coverage is annual summary coverage, not a verified detector-health flag for the saved morning intervals."
+    }
+  ],
+  "official_internal_data_evidence": {
+    "source_url": "https://cdn.tii.ie/publications/GE-ENV-01107-02.pdf",
+    "title": "TII Road Emissions Model (REM): Model Development Report",
+    "publication_date": "May 2024",
+    "passage": "Appendix I1, printed page 110 (PDF page index 116)",
+    "scope": "2016 observations at four TMU sites other than 1070; internal traffic-site downloads of 15-minute/hourly bins and a shorter individual-count sample.",
+    "implication": "An agency aggregate speed-data request is a grounded next route. Current N7 data availability, permission, licence and cost are unconfirmed."
+  },
+  "next_step_specification": [
+    "Seek an agency-approved aggregate extract for N7 1070 and appropriate upstream/downstream sites, for completed full-day dates matching the volume baseline.",
+    "Request per-direction/per-lane interval speed statistic definition and units, valid speed sample counts, matching vehicle counts, speed distribution bands if feasible, quality flags, clock convention and revisions.",
+    "For corridor benefits, request defined-route aggregate travel-time distributions and sample counts. Point speed cannot establish whole-corridor journey-time savings.",
+    "Retain no participant plates or individual movement records; no agency has been contacted."
+  ],
+  "result": "No N7 measured-speed or corridor journey-time series collected; access route clarified."
+}
+```
