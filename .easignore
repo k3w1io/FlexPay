@@ -1,0 +1,31 @@
+# This file is relative to the Git repository root.
+# EAS uses it instead of all .gitignore files.
+tmp/
+research/
+artifacts/
+node_modules/
+.expo/
+dist/
+web-build/
+mobile/android/
+mobile/ios/
+.kotlin/
+*.orig.*
+*.log
+*.tsbuildinfo
+.metro-health-check*
+expo-env.d.ts
+.DS_Store
+Thumbs.db
+.env
+.env.*
+credentials.json
+*.jks
+*.keystore
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision
+.aws/
+.codex/

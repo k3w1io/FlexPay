@@ -4,7 +4,7 @@ Build for Ireland hackathon workspace. FlexPay explores buying voluntary reducti
 
 Repository: https://github.com/k3w1io/FlexPay (private).
 
-Expo project: https://expo.dev/accounts/ali.gnv/projects/aliflexpay.
+Expo project: https://expo.dev/accounts/aliflexpayteam/projects/aliflexpay, owned by the `aliflexpayteam` organization. The owner's Expo login is `ali.gnv`.
 
 The app in `mobile/` is an Android-only Expo TypeScript starter with cloud-build profiles and a browser demo fallback. The market, traffic model, verification and rewards are still to be implemented. This starter does not make real payments or use vehicle records.
 
@@ -39,7 +39,7 @@ npx eas-cli@latest whoami
 npm run build:android
 ```
 
-The app is linked to the owner's existing EAS project. Teammates must use that project rather than creating another. Initially the owner runs cloud builds and shares the finished APK; GitHub write access does not grant Expo access.
+The app is linked to the team's existing EAS project. Teammates must use that project rather than creating another. Initially the owner runs cloud builds and shares the finished APK; GitHub write access does not grant Expo access.
 
 The `preview` profile makes a standalone Android APK. EAS provides an installation link when the build succeeds; it runs without a development server. Allow EAS to generate and manage the Android signing keystore on the first build.
 
@@ -65,7 +65,7 @@ git commit -m "Describe the change"
 git push -u origin codex/feature-name
 ```
 
-GitHub access and Expo build access are separate. For shared Expo ownership, create an Expo organization, invite teammates as Developers, and transfer the project to it. Keep individual accounts and credentials separate.
+GitHub access and Expo build access are separate. The project already belongs to the `aliflexpayteam` Expo organization. To let teammates run builds, invite their own Expo accounts as Developers at https://expo.dev/accounts/aliflexpayteam/settings/members. Keep individual accounts and credentials separate.
 
 ## Demo scope and remaining work
 

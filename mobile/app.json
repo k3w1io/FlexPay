@@ -2,7 +2,7 @@
   "expo": {
     "name": "FlexPay",
     "slug": "aliflexpay",
-    "owner": "ali.gnv",
+    "owner": "aliflexpayteam",
     "scheme": "flexpay",
     "platforms": [
       "android",
