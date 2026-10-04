@@ -29,7 +29,7 @@ export default function PreferencesScreen() {
     >
       <BackHeader title="My commute" />
       <View style={{ gap: 9 }}>
-        <Text style={s.title}>Fit FlexPay around\nyour everyday.</Text>
+        <Text style={s.title}>Fit FlexPay around{'\n'}your everyday.</Text>
         <Text style={s.body}>
           Tell us about your usual car commute. Offers should fit your routine.
         </Text>
