@@ -6,14 +6,18 @@ Repository: https://github.com/k3w1io/FlexPay (private).
 
 Expo project: https://expo.dev/accounts/aliflexpayteam/projects/aliflexpay, owned by the `aliflexpayteam` organization. The owner's Expo login is `ali.gnv`.
 
-First verified Android starter build:
+Initial Android starter build (superseded by the customer demo):
 
 - [Build details and installation](https://expo.dev/accounts/aliflexpayteam/projects/aliflexpay/builds/7c205e5b-1a50-4e5b-b336-7e47f1773c36)
 - [Download the APK](https://expo.dev/artifacts/eas/nWfwS36X4sU9bF--K1cgumMPMazNxCN5Wib6kD9ljvc.apk)
 
-This build verifies the starter and cloud build pipeline. It shows the FlexPay starter screen; the product demo flow remains to be implemented. A local copy is saved at `artifacts/FlexPay-starter.apk` in the owner's workspace. Device installation and runtime testing remain to be done on an Android phone.
+Those links are the original setup check, not the full customer demo. Device installation and runtime testing remain to be done on an Android phone.
 
-The app in `mobile/` is an Android-only Expo TypeScript starter with cloud-build profiles and a browser demo fallback. The market, traffic model, verification and rewards are still to be implemented. This starter does not make real payments or use vehicle records.
+The app in `mobile/` now contains the FlexPay customer demo: prefilled login, daily offer, travel choices, plan changes and cancellation, simulated completion/review, wallet, simulated transfer, commute preferences and help. Android is the only native target; the browser is a presentation fallback.
+
+**Demo login:** `aoife.demo` / `FlexPayDemo!` (both prefilled). Sign-in selects a fictional local persona. No real payments, bank access, GPS or number-plate data are used. Progress persists locally; use **You → Reset demo** to replay.
+
+See [the customer journey and 90-second walkthrough](docs/CUSTOMER-DEMO.md) for how the app should work, UX choices, assumptions and presentation steps.
 
 ## Start developing
 
@@ -26,16 +30,17 @@ npm ci
 npm run web
 ```
 
-Edit `mobile/App.tsx`. The browser reloads as you work. For a native development client, run `npm start` after installing a development build.
+Edit screens in `mobile/src/app/` (Expo Router). Shared UI, demo logic and local state live alongside them in `mobile/src/`. The browser reloads as you work. For a native development client, run `npm start` after installing a development build.
 
 ```sh
 npm run typecheck
 npm run lint
+npm test
 npm run export:android
 npm run export:web
 ```
 
-GitHub Actions runs TypeScript, lint, Android bundle and browser export checks on pushes to `main` and pull requests, and saves the exported web demo as a downloadable artifact. An artifact is an export, not a hosted URL.
+GitHub Actions runs TypeScript, lint, demo state tests, Android bundle and browser export checks on pushes to `main` and pull requests, and saves the exported web demo as a downloadable artifact. An artifact is an export, not a hosted URL.
 
 ## Expo cloud builds
 
@@ -62,7 +67,7 @@ Android is the only native target for this hackathon. No Google Play developer a
 
 ## Team workflow
 
-`gracemcginn` and `tiernaugh` have been invited with write access. Each person accepts their invitation and authenticates Git using their own account. The owner manages access at https://github.com/k3w1io/FlexPay/settings/access.
+`gracemcginn` and `tiernaugh` both have write access. Each person authenticates Git using their own account. The owner manages access at https://github.com/k3w1io/FlexPay/settings/access.
 
 Use a short branch per feature, push it, then open a pull request. GitHub checks give a quick confidence check before merging. No mandatory branch-protection or review rules have been added for this hackathon.
 
@@ -75,15 +80,16 @@ git push -u origin codex/feature-name
 
 GitHub access and Expo build access are separate. The project already belongs to the `aliflexpayteam` Expo organization. To let teammates run builds, invite their own Expo accounts as Developers at https://expo.dev/accounts/aliflexpayteam/settings/members. Keep individual accounts and credentials separate.
 
-## Demo scope and remaining work
+## Customer demo and next steps
 
-1. Select the evidenced corridor, period and traffic inputs from the research.
-2. Define and test the traffic reduction calculation and flexibility market.
-3. Build a narrow 60–90 second demo showing the constraint, procurement and result.
-4. Label observed data, assumptions and simulated outcomes in the UI.
-5. Rehearse the browser version and a completed APK; keep screenshots as a fallback.
+The customer journey uses a fixed **€3 total daily reward**, covering both journeys. The illustrative Monday offer uses 06:00–10:00 outward and 16:00–19:00 return windows on the candidate N7 corridor. The app presents these as demo terms, not measured capacity or an approved programme.
 
-Keep the demo deterministic and able to run with bundled data. A backend, live payments, GPS tracking and production vehicle verification are outside this initial demo setup. If AI calls are added, keep the API key on a backend; Expo public environment variables are included in the app bundle.
+1. Rehearse the completed customer flow using [the walkthrough](docs/CUSTOMER-DEMO.md).
+2. Install the new demo APK on an Android phone and check navigation, keyboard and accessibility.
+3. Develop the buyer/evaluation view separately if the pitch needs procurement or traffic-model outputs.
+4. Before a live pilot, establish real authentication, agreed eligibility, authorised verification and reward delivery.
+
+The demo is deterministic and runs with bundled synthetic data. Reminder settings and review requests stay local. A backend, live payments, GPS tracking and production vehicle verification are outside this customer prototype. If AI calls are added, keep the API key on a backend; Expo public environment variables are included in the app bundle.
 
 ## References
 
@@ -95,4 +101,4 @@ Keep the demo deterministic and able to run with bundled data. A backend, live p
 
 ## Dependency audit
 
-The official SDK 57 dependency tree currently reports 23 npm audit findings (16 high, 7 moderate). Compatible patches have been applied. Remaining findings involve transitive build tooling; npm's proposed forced fix downgrades Expo to SDK 44 and is incompatible with this app. Recheck upstream fixes before using the starter beyond the hackathon.
+The SDK 57 dependency tree has outstanding npm audit findings in upstream packages. Expo Doctor checks compatibility separately; audit findings are not resolved by that check. Do not force a major SDK downgrade to silence the audit. Recheck upstream patches and run a fresh audit before extending this prototype into a live service.
