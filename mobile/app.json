@@ -8,21 +8,22 @@
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "android": {
+      "versionCode": 2,
       "package": "com.k3w1io.flexpay",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#173c31",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
+      "bundler": "metro",
       "name": "FlexPay",
       "favicon": "./assets/favicon.png"
     },
@@ -30,6 +31,10 @@
       "eas": {
         "projectId": "809897a6-719e-4d47-90b9-f15435eb27f4"
       }
-    }
+    },
+    "plugins": [
+      "expo-router",
+      ["expo-splash-screen", { "backgroundColor": "#f7f8f2", "image": "./assets/icon.png", "imageWidth": 120 }]
+    ]
   }
 }

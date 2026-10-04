@@ -3,6 +3,7 @@
 Research snapshot for Alist, Grace and Tiernan, exported on 4 October 2026.
 
 - [Government pilot viability working document](flexpay-government-pilot-viability-working-document.md): N7 planning scenarios, government appraisal, Singapore comparators, data access, participant verification and the remaining research queue.
+- [Customer demo guide](CUSTOMER-DEMO.md): synthetic participant journey, presenter walkthrough, prototype boundaries and development checks.
 - [Data and access register](research/data-foundation/data-register.json): dependencies, collection status and unresolved access requirements.
 - [N7 baseline summary](research/data-foundation/baseline-summary.json): five weekday mornings, 28 September to 2 October 2026, with morning/hourly counts and reported full-day totals.
 - [Normalized five-minute records](research/data-foundation/n7-morning-intervals.jsonl): 480 aggregate Any/CAR observations.
