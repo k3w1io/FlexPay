@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "site_id": "000000001070",
+  "source_snapshot": "tii-n7-1070-east-2026-09-28-to-2026-10-02-morning-source.json",
+  "report_dates": [
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30",
+    "2026-10-01",
+    "2026-10-02"
+  ],
+  "interval_rows": 480,
+  "window": "06:00 inclusive to 10:00 exclusive, source clock",
+  "class_overlap_warning": "Any includes CAR. Do not add these class series.",
+  "daily": [
+    {
+      "date": "2026-09-28",
+      "class": "CAR",
+      "morning_06_to_10_count": 12191,
+      "reported_00_to_24_count": 43106
+    },
+    {
+      "date": "2026-09-29",
+      "class": "CAR",
+      "morning_06_to_10_count": 12111,
+      "reported_00_to_24_count": 41121
+    },
+    {
+      "date": "2026-09-30",
+      "class": "CAR",
+      "morning_06_to_10_count": 12697,
+      "reported_00_to_24_count": 43004
+    },
+    {
+      "date": "2026-10-01",
+      "class": "CAR",
+      "morning_06_to_10_count": 12426,
+      "reported_00_to_24_count": 43758
+    },
+    {
+      "date": "2026-10-02",
+      "class": "CAR",
+      "morning_06_to_10_count": 11569,
+      "reported_00_to_24_count": 41710
+    },
+    {
+      "date": "2026-09-28",
+      "class": "Any",
+      "morning_06_to_10_count": 17561,
+      "reported_00_to_24_count": 61721
+    },
+    {
+      "date": "2026-09-29",
+      "class": "Any",
+      "morning_06_to_10_count": 17376,
+      "reported_00_to_24_count": 59578
+    },
+    {
+      "date": "2026-09-30",
+      "class": "Any",
+      "morning_06_to_10_count": 18138,
+      "reported_00_to_24_count": 61442
+    },
+    {
+      "date": "2026-10-01",
+      "class": "Any",
+      "morning_06_to_10_count": 17821,
+      "reported_00_to_24_count": 62320
+    },
+    {
+      "date": "2026-10-02",
+      "class": "Any",
+      "morning_06_to_10_count": 17387,
+      "reported_00_to_24_count": 59776
+    }
+  ],
+  "hourly": [
+    {
+      "date": "2026-09-28",
+      "hour_start": "06:00",
+      "class": "Any",
+      "count": 4602
+    },
+    {
+      "date": "2026-09-28",
+      "hour_start": "06:00",
+      "class": "CAR",
+      "count": 3192
+    },
+    {
+      "date": "2026-09-28",
+      "hour_start": "07:00",
+      "class": "Any",
+      "count": 4346
+    },
+    {
+      "date": "2026-09-28",
+      "hour_start": "07:00",
+      "class": "CAR",
+      "count": 3040
+    },
+    {
+      "date": "2026-09-28",
+      "hour_start": "08:00",
+      "class": "Any",
+      "count": 4459
+    },
+    {
+      "date": "2026-09-28",
+      "hour_start": "08:00",
+      "class": "CAR",
+      "count": 3197
+    },
+    {
+      "date": "2026-09-28",
+      "hour_start": "09:00",
+      "class": "Any",
+      "count": 4154
+    },
+    {
+      "date": "2026-09-28",
+      "hour_start": "09:00",
+      "class": "CAR",
+      "count": 2762
+    },
+    {
+      "date": "2026-09-29",
+      "hour_start": "06:00",
+      "class": "Any",
+      "count": 4627
+    },
+    {
+      "date": "2026-09-29",
+      "hour_start": "06:00",
+      "class": "CAR",
+      "count": 3175
+    },
+    {
+      "date": "2026-09-29",
+      "hour_start": "07:00",
+      "class": "Any",
+      "count": 4177
+    },
+    {
+      "date": "2026-09-29",
+      "hour_start": "07:00",
+      "class": "CAR",
+      "count": 2947
+    },
+    {
+      "date": "2026-09-29",
+      "hour_start": "08:00",
+      "class": "Any",
+      "count": 4291
+    },
+    {
+      "date": "2026-09-29",
+      "hour_start": "08:00",
+      "class": "CAR",
+      "count": 3065
+    },
+    {
+      "date": "2026-09-29",
+      "hour_start": "09:00",
+      "class": "Any",
+      "count": 4281
+    },
+    {
+      "date": "2026-09-29",
+      "hour_start": "09:00",
+      "class": "CAR",
+      "count": 2924
+    },
+    {
+      "date": "2026-09-30",
+      "hour_start": "06:00",
+      "class": "Any",
+      "count": 4694
+    },
+    {
+      "date": "2026-09-30",
+      "hour_start": "06:00",
+      "class": "CAR",
+      "count": 3210
+    },
+    {
+      "date": "2026-09-30",
+      "hour_start": "07:00",
+      "class": "Any",
+      "count": 4696
+    },
+    {
+      "date": "2026-09-30",
+      "hour_start": "07:00",
+      "class": "CAR",
+      "count": 3338
+    },
+    {
+      "date": "2026-09-30",
+      "hour_start": "08:00",
+      "class": "Any",
+      "count": 4477
+    },
+    {
+      "date": "2026-09-30",
+      "hour_start": "08:00",
+      "class": "CAR",
+      "count": 3201
+    },
+    {
+      "date": "2026-09-30",
+      "hour_start": "09:00",
+      "class": "Any",
+      "count": 4271
+    },
+    {
+      "date": "2026-09-30",
+      "hour_start": "09:00",
+      "class": "CAR",
+      "count": 2948
+    },
+    {
+      "date": "2026-10-01",
+      "hour_start": "06:00",
+      "class": "Any",
+      "count": 4707
+    },
+    {
+      "date": "2026-10-01",
+      "hour_start": "06:00",
+      "class": "CAR",
+      "count": 3219
+    },
+    {
+      "date": "2026-10-01",
+      "hour_start": "07:00",
+      "class": "Any",
+      "count": 4556
+    },
+    {
+      "date": "2026-10-01",
+      "hour_start": "07:00",
+      "class": "CAR",
+      "count": 3197
+    },
+    {
+      "date": "2026-10-01",
+      "hour_start": "08:00",
+      "class": "Any",
+      "count": 4462
+    },
+    {
+      "date": "2026-10-01",
+      "hour_start": "08:00",
+      "class": "CAR",
+      "count": 3198
+    },
+    {
+      "date": "2026-10-01",
+      "hour_start": "09:00",
+      "class": "Any",
+      "count": 4096
+    },
+    {
+      "date": "2026-10-01",
+      "hour_start": "09:00",
+      "class": "CAR",
+      "count": 2812
+    },
+    {
+      "date": "2026-10-02",
+      "hour_start": "06:00",
+      "class": "Any",
+      "count": 4449
+    },
+    {
+      "date": "2026-10-02",
+      "hour_start": "06:00",
+      "class": "CAR",
+      "count": 2900
+    },
+    {
+      "date": "2026-10-02",
+      "hour_start": "07:00",
+      "class": "Any",
+      "count": 4378
+    },
+    {
+      "date": "2026-10-02",
+      "hour_start": "07:00",
+      "class": "CAR",
+      "count": 2968
+    },
+    {
+      "date": "2026-10-02",
+      "hour_start": "08:00",
+      "class": "Any",
+      "count": 4464
+    },
+    {
+      "date": "2026-10-02",
+      "hour_start": "08:00",
+      "class": "CAR",
+      "count": 2998
+    },
+    {
+      "date": "2026-10-02",
+      "hour_start": "09:00",
+      "class": "Any",
+      "count": 4096
+    },
+    {
+      "date": "2026-10-02",
+      "hour_start": "09:00",
+      "class": "CAR",
+      "count": 2703
+    }
+  ],
+  "readiness": "exploratory_baseline_only",
+  "unresolved": [
+    "source quality flags",
+    "time-zone convention",
+    "lane and bottleneck mapping",
+    "multiweek/full-day interval coverage",
+    "reproducible unattended export",
+    "speed or journey-time outcomes",
+    "independent calibration of effective capacity"
+  ],
+  "checks": {
+    "unique_keys": 480,
+    "CAR_not_above_Any": true,
+    "October_1_matches_earlier_daily_report": true,
+    "morning_not_above_full_day": true
+  }
+}

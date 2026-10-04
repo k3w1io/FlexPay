@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "updated": "2026-10-04",
+  "purpose": "FlexPay pilot data dependencies and access status",
+  "sources": [
+    {
+      "id": "n7_volume",
+      "purpose": "Build baseline and measure aggregate traffic changes",
+      "access_status": "five_weekday_morning_reports_observed",
+      "classification": "aggregate_public",
+      "fields": [
+        "site_id",
+        "date",
+        "interval_start_clock",
+        "direction",
+        "lane",
+        "vehicle_class",
+        "vehicle_count",
+        "quality_flag"
+      ],
+      "source": "https://trafficdata.tii.ie/publicmultinodemap.asp",
+      "collected_scope": "2026-09-28 to 2026-10-02; 06:00 to 10:00; East; all-class and CAR",
+      "gaps": [
+        "28-day baseline not collected",
+        "full-day fine-grained intervals not collected",
+        "source QC flags unverified",
+        "clock/time-zone and DST convention unconfirmed",
+        "unattended download not demonstrated"
+      ],
+      "licence_evidence": "https://data.tii.ie/traffic-counter-readme.html"
+    },
+    {
+      "id": "n7_geometry",
+      "purpose": "Map lane movements, queues, counter and camera to the effective bottleneck",
+      "access_status": "site_names_and_grid_observed_mapping_unverified",
+      "classification": "public_infrastructure",
+      "dashboard_coordinates": {"latitude": 53.31607, "longitude": -6.37874, "observed_date": "2026-10-04", "source": "https://trafficdata.tii.ie/sitedashboard.asp?sgid=XzOA8m4lr27P0HaO3_srSB&spid=abeb430eae98", "qualification": "Coordinates as displayed; physical lane/movement and queue relationship remain unverified."},
+      "fields": [
+        "site_id",
+        "location",
+        "lane_direction",
+        "movement",
+        "upstream_downstream_relationship",
+        "version"
+      ],
+      "gaps": [
+        "confirm official lane map",
+        "locate measurement relative to queue",
+        "confirm camera field of view"
+      ]
+    },
+    {
+      "id": "n7_camera_context",
+      "purpose": "Visual assessment of congestion within the visible frame",
+      "access_status": "public_updating_JPEG_verified",
+      "classification": "imagery_may_contain_personal_data",
+      "source": "https://traffic.tii.ie/list/cameras?debounce=true&searchTerm=N7&page=1&pageRecordLimit=25#media/camera/364/2087933136",
+      "fields": [
+        "camera_id",
+        "view",
+        "source_frame_time",
+        "observed_time",
+        "staleness",
+        "geometry_version",
+        "derived_queue_indicator"
+      ],
+      "gaps": [
+        "capture/reuse terms",
+        "fixed refresh rate",
+        "occlusion and calibration",
+        "no continuous video verified"
+      ],
+      "collection_policy": "Existing checks retain access metadata, not a camera image archive or plate reads."
+    },
+    {
+      "id": "n7_performance",
+      "purpose": "Measure whether volume reduction improves delay and reliability",
+      "access_status": "public_views_checked_no_speed_series_exposed",
+      "classification": "prefer_aggregate_nonidentifying",
+      "fields": [
+        "route_segment",
+        "time_interval",
+        "travel_time_seconds",
+        "speed_kmh",
+        "sample_count",
+        "quality_flag"
+      ],
+      "candidate_owner": "TII and road operator; no specific N7 performance feed or export confirmed",
+      "access_check": "research/n7/n7-performance-access-check-2026-10-04.json",
+      "internal_data_evidence": {"source": "https://cdn.tii.ie/publications/GE-ENV-01107-02.pdf", "publication_date": "2024-05", "section": "Appendix I1, printed page 110", "scope": "2016 data at TMU 1111, 1043, 1504 and 1113; 15-minute, hourly and individual vehicle observations from TII internal traffic site. Does not establish equivalent data, current coverage or access at N7 site 1070."},
+      "gaps": [
+        "official route coverage",
+        "whether current N7 site 1070 speed data exists and is shareable",
+        "spot-speed statistic definition, valid sample counts and quality flags",
+        "available aggregation",
+        "cost/licence",
+        "speed/flow relationship",
+        "tail-of-queue coverage"
+      ]
+    },
+    {
+      "id": "context",
+      "purpose": "Explain seasonality and unusual traffic days",
+      "access_status": "required_not_collected",
+      "classification": "public_context",
+      "fields": [
+        "date",
+        "weather",
+        "holiday_school_term",
+        "roadworks",
+        "collision_incident",
+        "event",
+        "other_transport_changes"
+      ],
+      "candidate_sources": [
+        "TII official roadwork/incident records",
+        "Met Eireann weather",
+        "official holiday and school calendars"
+      ],
+      "gaps": [
+        "source access and date coverage",
+        "common clock convention",
+        "coverage and revisions"
+      ]
+    },
+    {
+      "id": "participant_profile",
+      "purpose": "Establish eligibility, baseline habits and voluntary participation",
+      "access_status": "proposed_only_no_records_collected",
+      "classification": "personal",
+      "fields": [
+        "participant_token",
+        "baseline_travel_pattern",
+        "eligible_window",
+        "consent_or_other_basis_record",
+        "household_vehicle_policy",
+        "withdrawal_status"
+      ],
+      "gaps": [
+        "responsible controller",
+        "lawful basis",
+        "participant information",
+        "necessary baseline detail",
+        "trial recruitment approval"
+      ],
+      "collection_policy": "Use synthetic tokens in development; no production personal data in this workspace."
+    },
+    {
+      "id": "restricted_plate_matching",
+      "purpose": "Optional participant-specific vehicle observation",
+      "access_status": "no_access_confirmed",
+      "classification": "personal_location",
+      "candidate_owner": "TII/contracted network operator or specifically authorised ANPR provider",
+      "fields": [
+        "separate_restricted_plate_registration",
+        "partner_match_result",
+        "coverage_state",
+        "error_and_dispute_reference"
+      ],
+      "source": "https://www.tii.ie/en/compliance/data-protection-notice/",
+      "gaps": [
+        "FlexPay-specific purpose and lawful basis",
+        "N7 camera coverage",
+        "whether existing encrypted records support participant matching",
+        "DPIA",
+        "controller/processor or joint-controller arrangement",
+        "security",
+        "retention",
+        "cost"
+      ],
+      "collection_policy": "Prefer partner-held identifiers and limited attestation results. No raw plate movements or OCR harvesting from the public camera."
+    },
+    {
+      "id": "trial_and_rewards",
+      "purpose": "Measure additional behaviour change and account for payouts",
+      "access_status": "proposed_only",
+      "classification": "personal_for_operations_aggregate_for_reporting",
+      "fields": [
+        "participant_token",
+        "trial_assignment",
+        "offer",
+        "acceptance",
+        "verification_evidence_state",
+        "decision_reason",
+        "appeal_status",
+        "reward_amount_eur",
+        "payment_reference",
+        "evaluation_cohort"
+      ],
+      "gaps": [
+        "causal trial design",
+        "baseline eligibility",
+        "treatment/control and displacement tracking",
+        "approved reward delivery",
+        "accounting retention",
+        "false-read and outage policies"
+      ]
+    }
+  ]
+}

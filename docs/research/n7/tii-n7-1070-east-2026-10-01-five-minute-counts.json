@@ -1,0 +1,413 @@
+{
+  "observed_at_utc": "2026-10-04T13:00:00Z",
+  "observation_method": "Read from the rendered official public report table in the browser. A subsequent direct HTTP request did not expose that rendered table; automated bulk export is not yet verified.",
+  "site_name": "TMU N07 001.0 E",
+  "site_id": "000000001070",
+  "site_description": "N07 Between Jn01 M50 and Jn1a Newlands Cross (R113), Dublin",
+  "report_date": "2026-10-01",
+  "direction": "East",
+  "interval_minutes": 5,
+  "report_header": "Average Daily Flow",
+  "window": "06:00 to 10:00, reported local clock labels; timezone convention requires confirmation",
+  "scope": "48 morning intervals only. Reported passing counts are not latent demand, capacity, journey times or causal avoided trips.",
+  "reports": [
+    {
+      "vehicle_class": "Any",
+      "source_url": "https://trafficdata.tii.ie/tfdayreport.asp?sgid=XzOA8m4lr27P0HaO3_srSB&spid=ABEB430EAE98&reportdate=2026-10-01&enddate=2026-10-01&dir=%2D1&intval=2",
+      "counts": [
+        {
+          "interval_start": "06:00",
+          "reported_count": 257
+        },
+        {
+          "interval_start": "06:05",
+          "reported_count": 355
+        },
+        {
+          "interval_start": "06:10",
+          "reported_count": 401
+        },
+        {
+          "interval_start": "06:15",
+          "reported_count": 431
+        },
+        {
+          "interval_start": "06:20",
+          "reported_count": 395
+        },
+        {
+          "interval_start": "06:25",
+          "reported_count": 417
+        },
+        {
+          "interval_start": "06:30",
+          "reported_count": 428
+        },
+        {
+          "interval_start": "06:35",
+          "reported_count": 407
+        },
+        {
+          "interval_start": "06:40",
+          "reported_count": 399
+        },
+        {
+          "interval_start": "06:45",
+          "reported_count": 405
+        },
+        {
+          "interval_start": "06:50",
+          "reported_count": 405
+        },
+        {
+          "interval_start": "06:55",
+          "reported_count": 407
+        },
+        {
+          "interval_start": "07:00",
+          "reported_count": 382
+        },
+        {
+          "interval_start": "07:05",
+          "reported_count": 395
+        },
+        {
+          "interval_start": "07:10",
+          "reported_count": 373
+        },
+        {
+          "interval_start": "07:15",
+          "reported_count": 359
+        },
+        {
+          "interval_start": "07:20",
+          "reported_count": 382
+        },
+        {
+          "interval_start": "07:25",
+          "reported_count": 371
+        },
+        {
+          "interval_start": "07:30",
+          "reported_count": 390
+        },
+        {
+          "interval_start": "07:35",
+          "reported_count": 359
+        },
+        {
+          "interval_start": "07:40",
+          "reported_count": 376
+        },
+        {
+          "interval_start": "07:45",
+          "reported_count": 405
+        },
+        {
+          "interval_start": "07:50",
+          "reported_count": 380
+        },
+        {
+          "interval_start": "07:55",
+          "reported_count": 384
+        },
+        {
+          "interval_start": "08:00",
+          "reported_count": 375
+        },
+        {
+          "interval_start": "08:05",
+          "reported_count": 386
+        },
+        {
+          "interval_start": "08:10",
+          "reported_count": 372
+        },
+        {
+          "interval_start": "08:15",
+          "reported_count": 391
+        },
+        {
+          "interval_start": "08:20",
+          "reported_count": 379
+        },
+        {
+          "interval_start": "08:25",
+          "reported_count": 378
+        },
+        {
+          "interval_start": "08:30",
+          "reported_count": 371
+        },
+        {
+          "interval_start": "08:35",
+          "reported_count": 362
+        },
+        {
+          "interval_start": "08:40",
+          "reported_count": 351
+        },
+        {
+          "interval_start": "08:45",
+          "reported_count": 372
+        },
+        {
+          "interval_start": "08:50",
+          "reported_count": 359
+        },
+        {
+          "interval_start": "08:55",
+          "reported_count": 366
+        },
+        {
+          "interval_start": "09:00",
+          "reported_count": 359
+        },
+        {
+          "interval_start": "09:05",
+          "reported_count": 375
+        },
+        {
+          "interval_start": "09:10",
+          "reported_count": 324
+        },
+        {
+          "interval_start": "09:15",
+          "reported_count": 362
+        },
+        {
+          "interval_start": "09:20",
+          "reported_count": 357
+        },
+        {
+          "interval_start": "09:25",
+          "reported_count": 350
+        },
+        {
+          "interval_start": "09:30",
+          "reported_count": 341
+        },
+        {
+          "interval_start": "09:35",
+          "reported_count": 325
+        },
+        {
+          "interval_start": "09:40",
+          "reported_count": 343
+        },
+        {
+          "interval_start": "09:45",
+          "reported_count": 311
+        },
+        {
+          "interval_start": "09:50",
+          "reported_count": 350
+        },
+        {
+          "interval_start": "09:55",
+          "reported_count": 299
+        }
+      ],
+      "total": 17821
+    },
+    {
+      "vehicle_class": "CAR",
+      "source_url": "https://trafficdata.tii.ie/tfdayreport.asp?sgid=XzOA8m4lr27P0HaO3_srSB&spid=ABEB430EAE98&reportdate=2026-10-01&enddate=2026-10-01&dir=%2D1&intval=2&dim1bin=2",
+      "counts": [
+        {
+          "interval_start": "06:00",
+          "reported_count": 178
+        },
+        {
+          "interval_start": "06:05",
+          "reported_count": 255
+        },
+        {
+          "interval_start": "06:10",
+          "reported_count": 274
+        },
+        {
+          "interval_start": "06:15",
+          "reported_count": 302
+        },
+        {
+          "interval_start": "06:20",
+          "reported_count": 261
+        },
+        {
+          "interval_start": "06:25",
+          "reported_count": 276
+        },
+        {
+          "interval_start": "06:30",
+          "reported_count": 292
+        },
+        {
+          "interval_start": "06:35",
+          "reported_count": 290
+        },
+        {
+          "interval_start": "06:40",
+          "reported_count": 266
+        },
+        {
+          "interval_start": "06:45",
+          "reported_count": 275
+        },
+        {
+          "interval_start": "06:50",
+          "reported_count": 262
+        },
+        {
+          "interval_start": "06:55",
+          "reported_count": 288
+        },
+        {
+          "interval_start": "07:00",
+          "reported_count": 259
+        },
+        {
+          "interval_start": "07:05",
+          "reported_count": 268
+        },
+        {
+          "interval_start": "07:10",
+          "reported_count": 248
+        },
+        {
+          "interval_start": "07:15",
+          "reported_count": 245
+        },
+        {
+          "interval_start": "07:20",
+          "reported_count": 281
+        },
+        {
+          "interval_start": "07:25",
+          "reported_count": 258
+        },
+        {
+          "interval_start": "07:30",
+          "reported_count": 269
+        },
+        {
+          "interval_start": "07:35",
+          "reported_count": 256
+        },
+        {
+          "interval_start": "07:40",
+          "reported_count": 264
+        },
+        {
+          "interval_start": "07:45",
+          "reported_count": 309
+        },
+        {
+          "interval_start": "07:50",
+          "reported_count": 272
+        },
+        {
+          "interval_start": "07:55",
+          "reported_count": 268
+        },
+        {
+          "interval_start": "08:00",
+          "reported_count": 270
+        },
+        {
+          "interval_start": "08:05",
+          "reported_count": 271
+        },
+        {
+          "interval_start": "08:10",
+          "reported_count": 273
+        },
+        {
+          "interval_start": "08:15",
+          "reported_count": 296
+        },
+        {
+          "interval_start": "08:20",
+          "reported_count": 271
+        },
+        {
+          "interval_start": "08:25",
+          "reported_count": 277
+        },
+        {
+          "interval_start": "08:30",
+          "reported_count": 270
+        },
+        {
+          "interval_start": "08:35",
+          "reported_count": 258
+        },
+        {
+          "interval_start": "08:40",
+          "reported_count": 251
+        },
+        {
+          "interval_start": "08:45",
+          "reported_count": 254
+        },
+        {
+          "interval_start": "08:50",
+          "reported_count": 253
+        },
+        {
+          "interval_start": "08:55",
+          "reported_count": 254
+        },
+        {
+          "interval_start": "09:00",
+          "reported_count": 248
+        },
+        {
+          "interval_start": "09:05",
+          "reported_count": 263
+        },
+        {
+          "interval_start": "09:10",
+          "reported_count": 221
+        },
+        {
+          "interval_start": "09:15",
+          "reported_count": 255
+        },
+        {
+          "interval_start": "09:20",
+          "reported_count": 253
+        },
+        {
+          "interval_start": "09:25",
+          "reported_count": 235
+        },
+        {
+          "interval_start": "09:30",
+          "reported_count": 242
+        },
+        {
+          "interval_start": "09:35",
+          "reported_count": 228
+        },
+        {
+          "interval_start": "09:40",
+          "reported_count": 223
+        },
+        {
+          "interval_start": "09:45",
+          "reported_count": 212
+        },
+        {
+          "interval_start": "09:50",
+          "reported_count": 248
+        },
+        {
+          "interval_start": "09:55",
+          "reported_count": 184
+        }
+      ],
+      "total": 12426
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "view": "West",
+    "checked_at_utc": "2026-10-04T12:50:18.440456+00:00",
+    "url": "https://irecam.carsprogram.org/Kapsch/time_logo_cctv-701.jpg",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "last_modified": "Sun, 04 Oct 2026 12:46:07 GMT",
+    "bytes": 239460,
+    "sha256": "6182737c7484954a55ec51fca2af8ee75e360f73524a4f8860b8e5d8e7943420"
+  },
+  {
+    "view": "East",
+    "checked_at_utc": "2026-10-04T12:50:18.523331+00:00",
+    "url": "https://irecam.carsprogram.org/Kapsch/time_logo_cctv-700.jpg",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "last_modified": "Sun, 04 Oct 2026 12:45:52 GMT",
+    "bytes": 305398,
+    "sha256": "d5672f2ccbaff469a7fad2405b2f5beeb9934777bff6b903bfd1be503031fc2e"
+  },
+  {
+    "checked_at_utc": "2026-10-04T13:00:22.690509+00:00",
+    "source_url": "https://irecam.carsprogram.org/Kapsch/time_logo_cctv-701.jpg?1791118320000",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "last_modified": "Sun, 04 Oct 2026 12:56:16 GMT",
+    "bytes": 241310,
+    "sha256": "ef7361830c7306d28d91a18c9838806c41cb57d9f2a78c62b08bcc617a38204b"
+  }
+]

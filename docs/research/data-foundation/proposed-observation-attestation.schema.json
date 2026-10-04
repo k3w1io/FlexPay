@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed limited vehicle observation attestation",
+  "description": "A proposed interface for an authorised partner, not an existing TII API. This participant-linked output is still personal data. No-read is not proof of an avoided journey. The final reward decision and causal evaluation are separate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "attestation_id",
+    "participant_token",
+    "target_window_id",
+    "observation_state",
+    "coverage_state",
+    "issued_at",
+    "expires_at",
+    "policy_version"
+  ],
+  "properties": {
+    "attestation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "participant_token": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Purpose-limited identifier; no raw plate or owner name."
+    },
+    "target_window_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observation_state": {
+      "type": "string",
+      "enum": [
+        "seen",
+        "not_seen",
+        "unknown"
+      ],
+      "description": "Vehicle observation only; does not identify its driver or demonstrate additional behaviour change."
+    },
+    "coverage_state": {
+      "type": "string",
+      "enum": [
+        "validated",
+        "partial",
+        "unavailable",
+        "unverified"
+      ],
+      "description": "Coverage includes lane and direction scope, outages and read performance. A partial or unverified window must not establish compliant absence."
+    },
+    "issued_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_reference": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Restricted partner-side reference for an authorised appeal; not a public image or movement trail."
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$comment": "Do not place real identifiers in developer fixtures. A production protocol also needs authentication, replay protection, attestation integrity and controller-approved retention, none of which is provided by this JSON schema."
+}
