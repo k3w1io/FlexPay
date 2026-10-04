@@ -19,6 +19,25 @@ The app in `mobile/` now contains the FlexPay customer demo: prefilled login, da
 
 See [the customer journey and 90-second walkthrough](docs/CUSTOMER-DEMO.md) for how the app should work, UX choices, assumptions and presentation steps.
 
+## Run on your Android phone with Expo Go
+
+Install Expo Go for SDK 57 on the phone, then from `mobile/`:
+
+```sh
+npm ci
+npm run start:phone
+```
+
+The Expo Go tunnel prints a QR code. Open Expo Go → Scan QR code. The phone and computer both need internet, but do not have to share Wi-Fi. Keep this computer awake and the server running. This is a live development link; it stops working when the server or tunnel stops.
+
+To save a shareable QR image while that server is running, use a second terminal:
+
+```sh
+npm run qr:phone
+```
+
+This writes `artifacts/FlexPay-Expo-Go-QR.png`, using Expo CLI’s own QR encoder and the server’s current deep link. Generate it again after restarting the tunnel; never reuse an old QR if the URL changed. QR images and APKs are local artifacts and are not committed.
+
 ## Start developing
 
 Use Node.js 22.13 or newer in the Node 22 series and npm. Accept the repository invitation before cloning.

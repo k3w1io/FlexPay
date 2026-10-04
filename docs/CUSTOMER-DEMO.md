@@ -39,6 +39,8 @@ The demonstration follows **Aoife Murphy**, a fictional Naas-to-Dublin commuter,
 
 For the review story, use **You → Reset demo**, select **Inconclusive demo check**, and repeat steps 2–4. Show the pending reward, request a demo review, then use **Demo: approve this review**. Cancelling a plan is another useful customer-control story.
 
+For a phone rehearsal, run `npm run start:phone` from `mobile/` and scan its QR with Expo Go (SDK 57). Keep the development server and computer running. `npm run qr:phone` saves the live QR image for sharing. The standalone Android preview APK is the presentation fallback that runs without the server.
+
 Reset restores the €12 opening balance, clears all sample plans and transfers, restores commute preferences and switches checks back to clear. It preserves sign-in. Signing out preserves progress.
 
 ## Evidence and boundaries
